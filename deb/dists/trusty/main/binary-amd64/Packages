@@ -1,0 +1,19 @@
+Package: planex
+Priority: optional
+Section: ocaml
+Installed-Size: 151
+Maintainer: Euan Harris <euan.harris@citrix.com>
+Architecture: all
+Version: 0.6.0pre3-1
+Depends: mock, rpm-build, createrepo, libpython2.7-stdlib
+Recommends: ocaml-findlib
+Filename: dists/trusty/main/binary-amd64/planex_0.6.0pre3-1_all.deb
+Size: 29464
+MD5sum: bcd8c4e9abf54a5c919460a4f3d45d23
+SHA1: 184577f156bbd43d4385324970cbfee9cf0e4f01
+SHA256: 29531b50f43355cdcaeb0992368d986a44f9dac4a059c9d991a053284b28202c
+SHA512: 3f411e846334b2585bd36f68f4035daa0cc0162c380a9bb9ee16ea9f1f87287b1097823445a75001ac154dac9fb342be7ff3b1435c4f6896f0c88559ecfe6748
+Description: RPM/deb build tool
+ Planex is a tool for building RPMs and deb files. It manages
+ interdependencies and caching.
+

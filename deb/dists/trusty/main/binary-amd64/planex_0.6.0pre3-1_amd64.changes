@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 14 Jan 2015 12:00:00 +0000
+Source: planex
+Binary: planex
+Architecture: source all
+Version: 0.6.0pre3-1
+Distribution: UNRELEASED
+Urgency: low
+Maintainer: Euan Harris <euan.harris@citrix.com>
+Changed-By: Euan Harris <euan.harris@citrix.com>
+Description: 
+ planex     - RPM/deb build tool
+Changes: 
+ planex (0.6.0pre3-1) UNRELEASED; urgency=low
+ .
+   * Pre-release 0.6.0pre3
+Checksums-Sha1: 
+ 4164bb299c7fef4562a042c1423320605d15eebd 864 planex_0.6.0pre3-1.dsc
+ 45e1b79a213025911bdb690fa372af06ac11409a 71072 planex_0.6.0pre3.orig.tar.gz
+ 1f7e3e53840e187683691a900d1f3df56bcb12ea 1965 planex_0.6.0pre3-1.debian.tar.gz
+ 184577f156bbd43d4385324970cbfee9cf0e4f01 29464 planex_0.6.0pre3-1_all.deb
+Checksums-Sha256: 
+ 8a69ee6519e840a9ba2461dda1449b9394368a0898a3e54638ac4959745b336b 864 planex_0.6.0pre3-1.dsc
+ 2f3ecccc78baae18b0b50d6bdb6e2aea044c2346c105ec9e2e1057a9cb07442f 71072 planex_0.6.0pre3.orig.tar.gz
+ 01759ca0f21fa91c25c0c709a015cfa57280c2a123d7fc9f3f0511ea70caaaa3 1965 planex_0.6.0pre3-1.debian.tar.gz
+ 29531b50f43355cdcaeb0992368d986a44f9dac4a059c9d991a053284b28202c 29464 planex_0.6.0pre3-1_all.deb
+Files: 
+ 1def15635ef125a3ee275387ca293d24 864 ocaml optional planex_0.6.0pre3-1.dsc
+ 5805f5da87119adb7c43a2188ed1ef53 71072 ocaml optional planex_0.6.0pre3.orig.tar.gz
+ 5db7ee8c65d399022d73f2cc1fd86978 1965 ocaml optional planex_0.6.0pre3-1.debian.tar.gz
+ bcd8c4e9abf54a5c919460a4f3d45d23 29464 ocaml optional planex_0.6.0pre3-1_all.deb
