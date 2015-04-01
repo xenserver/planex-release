@@ -1,0 +1,211 @@
+INFO buildroot.py:277:  Mock Version: 1.2.7
+DEBUG buildroot.py:130:  rootdir = /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root
+DEBUG buildroot.py:131:  resultdir = _build/RPMS/noarch/
+DEBUG util.py:107:  ensuring that dir exists: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/etc/pki/mock
+DEBUG util.py:107:  ensuring that dir exists: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/etc/yum/pluginconf.d
+DEBUG package_manager.py:158:  configure yum
+DEBUG package_manager.py:164:  configure yum priorities
+DEBUG package_manager.py:166:  configure yum rhnplugin
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'CCACHE_DIR': '/tmp/ccache', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'CCACHE_DIR': '/tmp/ccache', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:388:  userdel: user 'mockbuild' does not exist
+DEBUG util.py:499:  Child return code was: 6
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/usr/sbin/groupdel', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'CCACHE_DIR': '/tmp/ccache', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:388:  groupdel: group 'mockbuild' does not exist
+DEBUG util.py:499:  Child return code was: 6
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/usr/sbin/groupadd', '-g', '135', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'CCACHE_DIR': '/tmp/ccache', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: /usr/sbin/useradd -o -m -u 2302 -g 135 -d /builddir -n mockbuild with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'CCACHE_DIR': '/tmp/ccache', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'CCACHE_UMASK': '002'} and shell True
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:107:  ensuring that dir exists: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/RPMS
+DEBUG util.py:110:  creating dir: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/RPMS
+DEBUG util.py:107:  ensuring that dir exists: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/SPECS
+DEBUG util.py:110:  creating dir: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/SPECS
+DEBUG util.py:107:  ensuring that dir exists: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/SRPMS
+DEBUG util.py:110:  creating dir: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/SRPMS
+DEBUG util.py:107:  ensuring that dir exists: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/SOURCES
+DEBUG util.py:110:  creating dir: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/SOURCES
+DEBUG util.py:107:  ensuring that dir exists: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/BUILD
+DEBUG util.py:110:  creating dir: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/BUILD
+DEBUG util.py:107:  ensuring that dir exists: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  creating dir: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/BUILDROOT
+DEBUG util.py:107:  ensuring that dir exists: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/originals
+DEBUG util.py:110:  creating dir: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/builddir/build/originals
+DEBUG package_manager.py:62:  ['/usr/bin/yum', '--installroot', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/', '--releasever', '21', 'update']
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/usr/bin/yum', '--installroot', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/', '--releasever', '21', 'update', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'CCACHE_DIR': '/tmp/ccache', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:388:  Resolving Dependencies
+DEBUG util.py:388:  --> Running transaction check
+DEBUG util.py:388:  ---> Package kernel-headers.x86_64 0:3.19.2-201.fc21 will be updated
+DEBUG util.py:388:  ---> Package kernel-headers.x86_64 0:3.19.3-200.fc21 will be an update
+DEBUG util.py:388:  ---> Package perl-Text-ParseWords.noarch 0:3.29-6.fc21 will be updated
+DEBUG util.py:388:  ---> Package perl-Text-ParseWords.noarch 0:3.30-1.fc21 will be an update
+DEBUG util.py:388:  --> Finished Dependency Resolution
+DEBUG util.py:388:  Dependencies Resolved
+DEBUG util.py:388:  ================================================================================
+DEBUG util.py:388:   Package                   Arch        Version               Repository    Size
+DEBUG util.py:388:  ================================================================================
+DEBUG util.py:388:  Updating:
+DEBUG util.py:388:   kernel-headers            x86_64      3.19.3-200.fc21       updates      974 k
+DEBUG util.py:388:   perl-Text-ParseWords      noarch      3.30-1.fc21           updates       17 k
+DEBUG util.py:388:  Transaction Summary
+DEBUG util.py:388:  ================================================================================
+DEBUG util.py:388:  Upgrade  2 Packages
+DEBUG util.py:388:  Total size: 991 k
+DEBUG util.py:388:  Downloading packages:
+DEBUG util.py:388:  Running transaction check
+DEBUG util.py:388:  Running transaction test
+DEBUG util.py:388:  Transaction test succeeded
+DEBUG util.py:388:  Running transaction (shutdown inhibited)
+DEBUG util.py:388:    Updating   : perl-Text-ParseWords-3.30-1.fc21.noarch                      1/4 
+DEBUG util.py:388:    Updating   : kernel-headers-3.19.3-200.fc21.x86_64                        2/4 
+DEBUG util.py:388:    Cleanup    : perl-Text-ParseWords-3.29-6.fc21.noarch                      3/4 
+DEBUG util.py:388:    Cleanup    : kernel-headers-3.19.2-201.fc21.x86_64                        4/4 
+DEBUG util.py:388:    Verifying  : kernel-headers-3.19.3-200.fc21.x86_64                        1/4 
+DEBUG util.py:388:    Verifying  : perl-Text-ParseWords-3.30-1.fc21.noarch                      2/4 
+DEBUG util.py:388:    Verifying  : perl-Text-ParseWords-3.29-6.fc21.noarch                      3/4 
+DEBUG util.py:388:    Verifying  : kernel-headers-3.19.2-201.fc21.x86_64                        4/4 
+DEBUG util.py:388:  Updated:
+DEBUG util.py:388:    kernel-headers.x86_64 0:3.19.3-200.fc21                                       
+DEBUG util.py:388:    perl-Text-ParseWords.noarch 0:3.30-1.fc21                                     
+DEBUG util.py:388:  Complete!
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:119:  touching file: /var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/.initialized
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'CCACHE_DIR': '/tmp/ccache', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:388:  Updating / installing...
+DEBUG util.py:388:  planex-0.6.0-1+s0+0.6.0+239+ga1bde44.ewarning: user euanh does not exist - using root
+DEBUG util.py:388:  warning: group xendev does not exist - using root
+DEBUG util.py:388:  ######################################warning: user euanh does not exist - using root
+DEBUG util.py:388:  ##
+DEBUG util.py:388:  warning: group xendev does not exist - using root
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/bin/rpm', '-qpl', '/builddir/build/originals/planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'CCACHE_DIR': '/tmp/ccache', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:388:  planex-0.6.0+239+ga1bde44.tar.gz
+DEBUG util.py:388:  planex.spec
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG package_manager.py:62:  ['/usr/bin/yum', '--installroot', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/', '--releasever', '21', 'resolvedep', 'ccache']
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/usr/bin/yum', '--installroot', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/', '--releasever', '21', 'resolvedep', 'ccache', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'CCACHE_DIR': '/tmp/ccache', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:388:    ccache:
+DEBUG util.py:388:  0:ccache-3.1.10-1.fc21.x86_64 fedora
+DEBUG util.py:499:  Child return code was: 0
+DEBUG package_manager.py:62:  ['/usr/bin/yum', '--installroot', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/', '--releasever', '21', 'install', 'ccache']
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/usr/bin/yum', '--installroot', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/', '--releasever', '21', 'install', 'ccache', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'CCACHE_DIR': '/tmp/ccache', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:388:  Resolving Dependencies
+DEBUG util.py:388:  --> Running transaction check
+DEBUG util.py:388:  ---> Package ccache.x86_64 0:3.1.10-1.fc21 will be installed
+DEBUG util.py:388:  --> Finished Dependency Resolution
+DEBUG util.py:388:  Dependencies Resolved
+DEBUG util.py:388:  ================================================================================
+DEBUG util.py:388:   Package         Arch            Version                  Repository       Size
+DEBUG util.py:388:  ================================================================================
+DEBUG util.py:388:  Installing:
+DEBUG util.py:388:   ccache          x86_64          3.1.10-1.fc21            fedora          161 k
+DEBUG util.py:388:  Transaction Summary
+DEBUG util.py:388:  ================================================================================
+DEBUG util.py:388:  Install  1 Package
+DEBUG util.py:388:  Total size: 161 k
+DEBUG util.py:388:  Installed size: 392 k
+DEBUG util.py:388:  Downloading packages:
+DEBUG util.py:388:  Running transaction check
+DEBUG util.py:388:  Running transaction test
+DEBUG util.py:388:  Transaction test succeeded
+DEBUG util.py:388:  Running transaction (shutdown inhibited)
+DEBUG util.py:388:    Installing : ccache-3.1.10-1.fc21.x86_64                                  1/1 
+DEBUG util.py:388:    Verifying  : ccache-3.1.10-1.fc21.x86_64                                  1/1 
+DEBUG util.py:388:  Installed:
+DEBUG util.py:388:    ccache.x86_64 0:3.1.10-1.fc21                                                 
+DEBUG util.py:388:  Complete!
+DEBUG util.py:499:  Child return code was: 0
+DEBUG package_manager.py:62:  ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/', '--releasever', '21', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root//builddir/build/SRPMS/planex-0.6.0-1+s0+0.6.0+239+ga1bde44.fc21.src.rpm']
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/', '--releasever', '21', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root//builddir/build/SRPMS/planex-0.6.0-1+s0+0.6.0+239+ga1bde44.fc21.src.rpm', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'CCACHE_DIR': '/tmp/ccache', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:388:  Getting requirements for planex-0.6.0-1+s0+0.6.0+239+ga1bde44.fc21.src
+DEBUG util.py:388:   --> python-setuptools-2.0-8.fc21.noarch
+DEBUG util.py:388:  --> Running transaction check
+DEBUG util.py:388:  ---> Package python-setuptools.noarch 0:2.0-8.fc21 will be installed
+DEBUG util.py:388:  --> Processing Dependency: python(abi) = 2.7 for package: python-setuptools-2.0-8.fc21.noarch
+DEBUG util.py:388:  --> Processing Dependency: python-backports-ssl_match_hostname for package: python-setuptools-2.0-8.fc21.noarch
+DEBUG util.py:388:  --> Processing Dependency: /usr/bin/python for package: python-setuptools-2.0-8.fc21.noarch
+DEBUG util.py:388:  --> Running transaction check
+DEBUG util.py:388:  ---> Package python.x86_64 0:2.7.8-7.fc21 will be installed
+DEBUG util.py:388:  ---> Package python-backports-ssl_match_hostname.noarch 0:3.4.0.2-4.fc21 will be installed
+DEBUG util.py:388:  --> Processing Dependency: python-backports for package: python-backports-ssl_match_hostname-3.4.0.2-4.fc21.noarch
+DEBUG util.py:388:  --> Running transaction check
+DEBUG util.py:388:  ---> Package python-backports.x86_64 0:1.0-5.fc21 will be installed
+DEBUG util.py:388:  --> Finished Dependency Resolution
+DEBUG util.py:388:  Dependencies Resolved
+DEBUG util.py:388:  ================================================================================
+DEBUG util.py:388:   Package                               Arch     Version          Repository
+DEBUG util.py:388:                                                                             Size
+DEBUG util.py:388:  ================================================================================
+DEBUG util.py:388:  Installing:
+DEBUG util.py:388:   python-setuptools                     noarch   2.0-8.fc21       fedora   393 k
+DEBUG util.py:388:  Installing for dependencies:
+DEBUG util.py:388:   python                                x86_64   2.7.8-7.fc21     fedora    92 k
+DEBUG util.py:388:   python-backports                      x86_64   1.0-5.fc21       fedora   9.7 k
+DEBUG util.py:388:   python-backports-ssl_match_hostname   noarch   3.4.0.2-4.fc21   fedora    17 k
+DEBUG util.py:388:  Transaction Summary
+DEBUG util.py:388:  ================================================================================
+DEBUG util.py:388:  Install  1 Package (+3 Dependent packages)
+DEBUG util.py:388:  Total size: 511 k
+DEBUG util.py:388:  Installed size: 1.7 M
+DEBUG util.py:388:  Downloading packages:
+DEBUG util.py:388:  Running transaction check
+DEBUG util.py:388:  Running transaction test
+DEBUG util.py:388:  Transaction test succeeded
+DEBUG util.py:388:  Running transaction (shutdown inhibited)
+DEBUG util.py:388:    Installing : python-2.7.8-7.fc21.x86_64                                   1/4 
+DEBUG util.py:388:    Installing : python-backports-1.0-5.fc21.x86_64                           2/4 
+DEBUG util.py:388:    Installing : python-backports-ssl_match_hostname-3.4.0.2-4.fc21.noarch    3/4 
+DEBUG util.py:388:    Installing : python-setuptools-2.0-8.fc21.noarch                          4/4 
+DEBUG util.py:388:    Verifying  : python-backports-1.0-5.fc21.x86_64                           1/4 
+DEBUG util.py:388:    Verifying  : python-2.7.8-7.fc21.x86_64                                   2/4 
+DEBUG util.py:388:    Verifying  : python-setuptools-2.0-8.fc21.noarch                          3/4 
+DEBUG util.py:388:    Verifying  : python-backports-ssl_match_hostname-3.4.0.2-4.fc21.noarch    4/4 
+DEBUG util.py:388:  Installed:
+DEBUG util.py:388:    python-setuptools.noarch 0:2.0-8.fc21                                         
+DEBUG util.py:388:  Dependency Installed:
+DEBUG util.py:388:    python.x86_64 0:2.7.8-7.fc21                                                  
+DEBUG util.py:388:    python-backports.x86_64 0:1.0-5.fc21                                          
+DEBUG util.py:388:    python-backports-ssl_match_hostname.noarch 0:3.4.0.2-4.fc21                   
+DEBUG util.py:388:  Complete!
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['ccache', '-M', '4G'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'CCACHE_DIR': '/tmp/ccache', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'CCACHE_UMASK': '002'} and shell False
+DEBUG util.py:388:  Set cache size limit to 4.0 Gbytes
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG backend.py:438:  Copying packages to result dir
+DEBUG util.py:183:  kill orphans
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/tmp/ccache'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/var/cache/yum'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:499:  Child return code was: 0
+DEBUG util.py:518:  child environment: None
+DEBUG util.py:452:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-21-x86_64-planex-0.6.0-1+s0+0.6.0+239+ga1bde44.el6.noarch.rpm/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:499:  Child return code was: 0
