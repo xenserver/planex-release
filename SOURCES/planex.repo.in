@@ -1,0 +1,14 @@
+[planex]
+name=Planex
+baseurl=https://xenserver.github.io/planex-release/@RELEASE_TYPE@/rpm/@DIST@/$releasever
+gpgcheck=0
+Priority=1
+enabled=1
+
+[planex-source]
+name=Planex Source
+baseurl=https://xenserver.github.io/planex-release/@RELEASE_TYPE@/rpm/@DIST@/$releasever
+gpgcheck=0
+Priority=1
+enabled=0
+
