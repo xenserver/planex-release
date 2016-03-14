@@ -8,7 +8,7 @@ build_release() {
    RELEASE_TYPE=$3
 
    sed -e "s/@RELEASE_TYPE@/${RELEASE_TYPE}/g" SPECS/planex-release.spec.in > SPECS/planex-${RELEASE_TYPE}.spec
-   sed -e "s/@DIST@/${DIST_NAME}/g" -e "s/@RELEASE_TYPE@/${RELEASE_TYPE}/g" SOURCES/planex.repo.in > SOURCES/planex-${RELEASE_TYPE}.repo
+   sed -e "s/@DIST@/${DIST_NAME}/g" -e "s/@DIST_VERSION@/${DIST_VERSION}/g" -e "s/@RELEASE_TYPE@/${RELEASE_TYPE}/g" SOURCES/planex.repo.in > SOURCES/planex-${RELEASE_TYPE}.repo
    rpmbuild --define "_topdir ${PWD}" --define "version ${DIST_VERSION}" --define "dist_name ${DIST_NAME}" --bb SPECS/planex-${RELEASE_TYPE}.spec
    mkdir -p ${RELEASE_TYPE}/rpm/${DIST_NAME}/${DIST_VERSION}
    mv RPMS/noarch/planex-${RELEASE_TYPE}-${DIST_VERSION}-1.noarch.rpm ${RELEASE_TYPE}/rpm/${DIST_NAME}
