@@ -3,7 +3,7 @@
 set +x
 set -o errexit -o nounset
 
-if [ "$TRAVIS_BRANCH" != "travis" ]
+if [ "$TRAVIS_BRANCH" != "master" ]
 then
   echo "This commit was made against the $TRAVIS_BRANCH and not the master! No deploy!"
   exit 0
@@ -19,7 +19,7 @@ rev=$(git rev-parse --short HEAD)
 
 # Clone the destination repository into $HOME/out without echoing the token
 cd ..
-git clone --branch=gh-pages "https://${GH_TOKEN}@github.com/euanh/planex-release" out | sed -e "s/$GH_TOKEN/!REDACTED!/g"
+git clone --branch=gh-pages "https://${GH_TOKEN}@github.com/xenserver/planex-release" out | sed -e "s/$GH_TOKEN/!REDACTED!/g"
 set -x
 
 # Set up git
