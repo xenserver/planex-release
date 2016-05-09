@@ -22,12 +22,11 @@ cd ..
 git clone --branch=gh-pages "https://${GH_TOKEN}@github.com/xenserver/planex-release" out | sed -e "s/$GH_TOKEN/!REDACTED!/g"
 set -x
 
-# Set up git
-git config --global user.email "travis@travis-ci.org"
-git config --global user.name "Travis"
-
 # Commit the updated repository metadata
 cd out
+git config user.email "travis@travis-ci.org"
+git config user.name "Travis"
+
 rm -rf *
 cp -r ../planex-release/release .
 cp -r ../planex-release/unstable .
