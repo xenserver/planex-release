@@ -19,7 +19,7 @@ rev=$(git rev-parse --short HEAD)
 
 # Clone the destination repository into $HOME/out without echoing the token
 cd ..
-git clone --branch=gh-pages "https://${GH_TOKEN}@github.com/xenserver/planex-release" out | sed -e "s/$GH_TOKEN/!REDACTED!/g"
+git clone --branch=gh-pages "https://${GH_TOKEN}@github.com/xenserver/planex-release" out 2>&1 | sed -e "s/$GH_TOKEN/!REDACTED!/g"
 set -x
 
 # Commit the updated repository metadata
