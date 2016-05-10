@@ -1,11 +1,11 @@
-[planex]
+[planex-@RELEASE_TYPE@]
 name=Planex
 baseurl=https://xenserver.github.io/planex-release/@RELEASE_TYPE@/rpm/@DIST@/@DIST_VERSION@
 gpgcheck=0
 Priority=1
 enabled=1
 
-[planex-source]
+[planex-@RELEASE_TYPE@-source]
 name=Planex Source
 baseurl=https://xenserver.github.io/planex-release/@RELEASE_TYPE@/rpm/@DIST@/@DIST_VERSION@
 gpgcheck=0
