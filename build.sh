@@ -15,17 +15,13 @@ build_release() {
    createrepo ${RELEASE_TYPE}/rpm/$DIST_NAME/${DIST_VERSION}
 }
 
-build_release fedora 21 release
-build_release fedora 22 release
 build_release fedora 23 release
+build_release fedora 24 release
 
-build_release el 6 release
 build_release el 7 release
 
-build_release fedora 21 unstable
-build_release fedora 22 unstable
 build_release fedora 23 unstable
+build_release fedora 24 unstable
 
-build_release el 6 unstable
 build_release el 7 unstable
 
